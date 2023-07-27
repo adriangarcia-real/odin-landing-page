@@ -24,7 +24,7 @@ header .container {
   justify-content: space-between;
   align-items: center;
   width: 1022px;
-  margin-bottom: 124px;
+  margin-bottom: 90px;
 }
 
 .header-logo {
@@ -39,35 +39,63 @@ header .container {
   gap: 24px;
 }
 
-.header a {
+.header ul a {
   text-decoration: none;
   font-size: 18px;
   color: #E5E7EB;
+
+  position: relative;
+  letter-spacing: 0.5px;
+  transition: opacity 0.15s;
+}
+
+.header ul a:after {
+  content: "";
+  position: absolute;
+  background-color: #ff3c78;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s ease-in-out;
+}
+
+.header ul a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.header ul a:hover:after {
+  width: 100%;
+}
+
+.header ul a:active {
+  opacity: 0.7;
 }
 
 .header-content {
   width: 100%;
   display: flex;
   gap: 50px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 
 .left-section h1 {
-  font-size: 48px;
+  font-size: 50px;
   font-weight: 900;
   color: #F9FAF8;
-  margin: 0
+  margin-bottom: 8px;
 }
 
 .left-section {
-  width: 44%;
+  width: 46%;
 }
 
 .left-section p {
   font-size: 18px;
   color: #E5E7EB;
   margin-bottom: 12px;
+  line-height: 1.3em;
 }
 
 .left-section button {
@@ -78,7 +106,17 @@ header .container {
   font-size: 18px;
   font-weight: bold;
   padding: 8px 35px;
-  
+  cursor: pointer;
+
+  transition: background-color 0.15s, opacity 0.15s;
+}
+
+.left-section button:hover {
+   background-color: #1b6ef3;
+}
+
+.left-section button:active {
+  opacity: 0.7;
 }
 
 .right-section {
@@ -87,5 +125,5 @@ header .container {
 
 .header-content img {
   width: 510px;
-  height: 250px;
+  height: 254px;
 }
