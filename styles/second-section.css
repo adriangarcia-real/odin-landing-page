@@ -1,0 +1,44 @@
+.second-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 0 0;
+  height: 500px;
+}
+
+.second-section .container {
+  width: 800px;
+}
+
+.title {
+  color: #1f2937;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.informations {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.information {
+  text-align: center;
+  width: 165px;
+
+  color: rgb(90, 90, 90);
+}
+
+.information img {
+  margin-bottom: 6px;
+  width: 100%;
+  height: 170px;
+  border-radius: 12px;
+}
+
+.third-section {
+  height: 500px;
+  background-color: gray;
+}
+
